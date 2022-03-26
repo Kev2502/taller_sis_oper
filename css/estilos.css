@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(90deg, #48f725 20%, #a0a30c 100%);
+    color: white;
+}
+header{
+    font-size: 30px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+section{
+    line-height: 30px;
+    background: linear-gradient(90deg, #58f01c 20%, #17cf06 100%);
+}
+
+.empresa h2{
+    font-size: 30px;
+    text-align: center;
+}
+.empresa p{
+    text-align: justify;
+}
+
+.empresa h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+
+.servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    background: linear-gradient(90deg, #40dd10 20%, #e2df13 100%);
+}
+
+.servicios div{
+    margin: auto;
+    background: linear-gradient(90deg, #14df47 20%, #8aca13 100%);
+}
+.servicios div:hover{
+    background: linear-gradient(90deg, #f7f30e 20%, #1aff81 100%);
+    cursor: default;
+}
+aside{
+    display: flexbox;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #f7f425 20%, #44e912 70%);
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 80%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  /*Celulares*/
+ @media screen and (max-width: 767px) {
+    main {
+      width: 100%;
+      padding: 5px 10px;
+    }
+  }
+  /*Tablets*/
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+      width: 750px;
+      padding: 5px 10px;
+    }
+  }
+  /*Pantallas baja resolucion*/
+  @media screen and (min-width: 1024px) {
+    main {
+      width: 980px;
+      padding: 5px 15px;
+    }
+  }
